@@ -15,6 +15,10 @@ def main():
         winners.append(getrandom())
     print(f"The Winning Numbers are: {winners}")
 
+    matching(winners, num)
+
+
+def matching(winners, num):
     # print and count matching numbers
     x = 0
     for j in range(len(winners)):
@@ -23,6 +27,7 @@ def main():
             x += 1
 
     print(f"You got {x} matches")
+
 
 
 def getnumbers(num):
